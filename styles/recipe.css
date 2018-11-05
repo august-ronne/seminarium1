@@ -1,0 +1,70 @@
+.recipe-grid {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 5vh repeat(7, 1fr);
+}
+
+.recipe-grid > * {
+    display: flex;
+    margin: 5px;
+}
+
+.recipe-header {
+    grid-column: 1 / -1;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.4);
+    font-size: 3vh;
+}
+
+.recipe-image {
+    grid-column: 1 / 2;
+    grid-row: 2 / 5;
+    border: solid 2px #709b87;
+}
+
+.ingredients-list {
+    grid-column: 2 / -1;
+    grid-row: 2 / 5;
+}
+
+.cooking-instructions {
+    grid-column: 1 / -1;
+    grid-row: 5 / 7;
+    flex-direction: column;
+}
+
+.instructions-subheader {
+    background-color: #ff6f69;
+    padding: 5px;
+}
+
+.instructions-body {
+    padding: 5px;
+}
+
+.comment-1 {
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+    flex-direction: column;
+}
+
+.comment-2 {
+    grid-column: 1 / 2;
+    grid-row: 8 / 9;
+    flex-direction: column;
+}
+
+.comment-author {
+    background-color: #ff6f69;
+    padding: 2px;
+    border-radius: 4px 4px 0 0;
+}
+
+.comment-text {
+    background-color: #fff1dc;
+    color: #773412;
+    height: 100%;
+    border-radius: 0 0 4px 4px;
+}

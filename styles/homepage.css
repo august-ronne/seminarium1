@@ -1,0 +1,13 @@
+.page-content {
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-content > * {
+    width: 50%;
+    margin: 30px;
+}
+
+.homepage-header {
+    font-size: 3vh;
+}
